@@ -29,6 +29,7 @@ animation:fadeIn 2s;
 .cake{
 font-size:120px;
     animation:bounce 2s infinite;
+    filter:drop-shadow(0 8px 15px rgba(0,0,0,.25));
 }
 
 .balloons{
@@ -65,15 +66,16 @@ font-size:120px;
 }
 .message{
     width:min(90%,700px);
-    margin:25px auto;
-    padding:20px;
-    background:rgba(255,255,255,.25);
-    border-radius:20px;
-    backdrop-filter:blur(10px);
+    margin:30px auto;
+    padding:25px;
+    background:rgba(255,255,255,.2);
+    backdrop-filter:blur(15px);
+    border-radius:25px;
     color:white;
     line-height:1.8;
-    font-size:30px;
+    font-size:20px;
     text-align:left;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
 }
 
 @keyframes bounce{
@@ -106,7 +108,7 @@ font-size:120px;
 .message{
  width:92%;
     padding:18px;
-    font-size:25px;
+    font-size:20px;
     line-height:1.8;
     text-align:left;
 }
