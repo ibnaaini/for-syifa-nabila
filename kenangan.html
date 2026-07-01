@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kenangan Kita 📸</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    padding:30px;
+}
+
+h1{
+    color:white;
+    margin-bottom:10px;
+    text-align:center;
+}
+
+.subtitle{
+    color:white;
+    text-align:center;
+    margin-bottom:30px;
+    max-width:600px;
+    line-height:1.6;
+}
+
+.slider{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+}
+
+.slide-content{
+    text-align:center;
+}
+
+.slide-content img{
+    width:450px;
+    height:550px;
+    object-fit:cover;
+    border-radius:25px;
+    background:white;
+    padding:10px;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+.caption{
+    margin-top:20px;
+    color:white;
+    font-size:20px;
+    max-width:500px;
+    line-height:1.6;
+}
+
+button{
+    width:60px;
+    height:60px;
+    border:none;
+    border-radius:50%;
+    font-size:28px;
+    cursor:pointer;
+    background:white;
+    color:#ff5d8f;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.1);
+}
+
+.counter{
+    margin-top:15px;
+    color:white;
+    font-size:18px;
+}
+
+.next-page{
+    margin-top:35px;
+}
+
+.next-page a{
+    text-decoration:none;
+    background:white;
+    color:#ff5d8f;
+    padding:15px 30px;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+
+.slide-content img{
+    width:100%;
+    
+}
+
+button{
+    width:50px;
+    height:50px;
+}
+
+.caption{
+    font-size:16px;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<h1>📸 Kenangan Kita</h1>
+
+<p class="subtitle">
+Waktu memang tidak bisa diulang.
+Tapi beberapa momen terlalu berharga untuk dilupakan.
+</p>
+
+<div class="slider">
+
+<button onclick="prevSlide()">❮</button>
+
+<div class="slide-content">
+
+<img id="photo" src="images/13.jpg">
+
+<div class="caption" id="caption">
+Ini waktu kita kabur pas pkl hahaha. 💖
+</div>
+
+<div class="counter" id="counter">
+1 / 4
+</div>
+
+</div>
+
+<button onclick="nextSlide()">❯</button>
+
+</div>
+
+<div class="next-page">
+<a href="Countdown.html">Lanjut ➜</a>
+</div>
+
+<script>
+
+const photos = [
+"images/4.jpg",
+"images/9.jpg",
+"images/10.jpg",
+"images/11.jpg",
+"images/12.jpg",
+"images/3.jpg",
+"images/14.jpg"
+];
+
+const captions = [
+"Ini pas kamu mau fashion show pul wkwk, lucu kali, ngeselin, pengen kenak tumbok. 💖",
+"Foto ini pas kita di gramedia 😆 (sok rajin kita ya wkwk)",
+"Ini pas kita jadi panitia rohis hihihi.",
+"Disini capek kali kita ya baru siap olahraga hahahaha",
+"ini pas kita mau foto untuk ijazah",
+"ini pas kita nunggu foto untuk foto perpisahan(padahal kita tau kita ga pisah ahahaha)",
+"Ini pas kita mau foto studio(lucu kali kita)"
+];
+
+let current = 0;
+
+function showSlide(){
+
+document.getElementById("photo").src = photos[current];
+
+document.getElementById("caption").innerHTML = captions[current];
+
+document.getElementById("counter").innerHTML =
+(current + 1) + " / " + photos.length;
+
+}
+
+function nextSlide(){
+
+current++;
+
+if(current >= photos.length){
+current = 0;
+}
+
+showSlide();
+
+}
+
+function prevSlide(){
+
+current--;
+
+if(current < 0){
+current = photos.length - 1;
+}
+
+showSlide();
+
+}
+
+</script>
+
+</body>
+</html>

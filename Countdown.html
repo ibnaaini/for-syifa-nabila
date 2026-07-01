@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday</title>
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js">
+
+<style>
+
+body{
+margin:0;
+background:linear-gradient(
+135deg,
+#ff9a9e,
+#fad0c4
+);
+font-family:Arial;
+text-align:center;
+/*overflow:hidden;*/
+}
+
+h1{
+margin-top:50px;
+color:white;
+font-size:50px;
+animation:fadeIn 2s;
+}
+
+.cake{
+font-size:150px;
+animation:bounce 2s infinite;
+}
+
+.balloons{
+    position:fixed;
+    width:100%;
+    height:100%;
+    pointer-events:none;   
+}
+
+.balloons span{
+    position:absolute;
+    bottom:-100px;
+    font-size:50px;
+    animation:float 10s linear infinite;
+    
+}
+
+.balloons span:nth-child(1){left:5%; animation-duration:8s;}
+.balloons span:nth-child(2){left:15%; animation-duration:10s;}
+.balloons span:nth-child(3){left:25%; animation-duration:7s;}
+.balloons span:nth-child(4){left:40%; animation-duration:9s;}
+.balloons span:nth-child(5){left:55%; animation-duration:11s;}
+.balloons span:nth-child(6){left:70%; animation-duration:8s;}
+.balloons span:nth-child(7){left:85%; animation-duration:10s;}
+.balloons span:nth-child(8){left:95%; animation-duration:7s;}
+
+@keyframes float{
+    from{
+        transform:translateY(0);
+    }
+    to{
+        transform:translateY(-120vh);
+    }
+}
+.message{
+    width:80%;
+    margin:auto;
+    background:rgba(255,255,255,0.2);
+    padding:20px;
+    border-radius:25px;
+    backdrop-filter:blur(10px);
+}
+
+@keyframes bounce{
+50%{
+transform:translateY(-20px);
+}
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+}
+to{
+opacity:1;
+}
+}
+</style>
+
+</head>
+<body>
+    <script>
+
+        function startConfetti(){
+        
+        setInterval(() => {
+        
+        confetti({
+            particleCount: 8,
+            angle: 60,
+            spread: 80,
+            origin: { x: 0 }
+        });
+        
+        confetti({
+            particleCount: 8,
+            angle: 120,
+            spread: 80,
+            origin: { x: 1 }
+        });
+        
+        },250);
+        
+        }
+        
+        startConfetti();
+        
+        </script>
+<div class="balloons">
+    <span>🎈</span>
+    <span>🎈</span>
+    <span>🎈</span>
+    <span>🎈</span>
+    <span>🎈</span>
+    <span>🎈</span>
+    <span>🎈</span>
+    <span>🎈</span>
+</div>
+
+<!-- <h1>🎉 Selamat Ulang Tahun Ipul 🎉</h1> -->
+<h1>🎉 Selamat Ulang Tahun Syifa Nabila  🎉</h1>
+
+<div class="cake">
+🎂
+</div>
+
+<div class="balloons">
+    <span>🎈</span>
+    <span>🎈</span>
+    <span>🎈</span>
+    <span>🎈</span>
+    <span>🎈</span>
+    <span>🎈</span>
+    <span>🎈</span>
+    <span>🎈</span>
+</div>
+
+
+<div class="message"> 
+
+    🎉 Selamat Ulang Tahun, Ipul! 🎉
+
+    Yeayyy, akhirnya hari yang spesial ini datang juga. 🥳
+    
+    Selamat bertambah usia ya, Pul. hari ini ulang tahun kamu yang ke 20 yaa, udah tua rupanya kamu pul, ga nyangka padahal
+    waktu kita kenal kamu masih umur 15 ga sihh. ternyata kita kenal udah 5 tahun ya pul. waktu berjalan cepat kali. 
+    perasaan baru kemarin kita duduk bareng ahahahah. selamat ulang tahun ya pul, semoga panjang umur, sehat selalu, banyak rezekinya,
+    semoga kedepannya kamu jadi orang yang lebih baik, lebih sukses, intinya lebih-lebih dalam hal yang positif. semoga kita bisa terus bareng ya
+    ada lagi doa saya nih hehe, saya tau kamu jomblo pul wkwk, semoga dalam hal percintaan kamu beruntung ya, jangan sembarang pilih cowo pul, saya yakin
+    kamu pasti bakalan dapat cowo yang sayang sama kamu, yang ga akan buat kamu capek, yang ga ngizinin kamu kerja yang kaya.
+    tetap jadi ipul yang saya kenal ya pul. makasih ya udah mau berteman sama saya, selalu sabar ngadepin saya yang tukang marah dan tukang nangis ini. 
+    maaf ya kalo kadang saya suka bully kamu hehe, tapi itu mungkin bentuk sayang saya(membully kamu). gatau ya saya kalo bully kamu senang aja rasanya 
+    apalagi kalo kamu balas bully saya balik senang kali saya, rasanya kayak kita seimbang wkwk. sudah lah itu aja sih yang mau saya sampaikan.
+    pasti kamu berpikir ternyata "bebek bisa juga ya ngerangkai kata-kata gini"
+    wahahahah sebenarnya saya ada banyak bakat tersembunyi wkwk ahhh dh lah
+    oh iya ingat ya kalo ada apa-apa bilang ke saya, mungkin saat ini saya belum bisa bantu banyak buat kamu, tapi ingat kalo saya selalu disamping kamu,
+    nemenin kamu, dukung kamu, kamu bebas mau cerita apapun ke saya, walaupun nanti saya sibuk saya pasti bakalan ada waktu buat kamu cerita, kalo kamu kesel mau pukul Saya
+    pukul aja saya tapi nanti saya bales hehe.
+    sekali lagi selamat ulang tahun saipulll 🎂💖
+    
+    Jangan nangis ya baca ini, saya tau kok tulisan saya bagus
+    
+
+</div>
+
+
+<audio id="musik" autoplay loop>
+<source src="music/hbd.mp3">
+</audio>
+
+
+
+</body>
+</html>
