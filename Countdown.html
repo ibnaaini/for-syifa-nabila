@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Happy Birthday</title>
-<title>Happy Birthday</title>
 
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
 
@@ -73,7 +72,7 @@ font-size:120px;
     backdrop-filter:blur(10px);
     color:white;
     line-height:1.8;
-    font-size:20px;
+    font-size:30px;
     text-align:left;
 }
 
@@ -117,22 +116,7 @@ font-size:30px;
 }
 
 }
-@media (max-width:480px){
 
-h1{
-    font-size:26px;
-}
-
-.cake{
-    font-size:75px;
-}
-
-.message{
-    font-size:16px;
-    padding:15px;
-}
-
-}
 </style>
 
 </head>
@@ -221,12 +205,23 @@ h1{
 
 </div>
 
+<button onclick="playMusic()">🎵 Putar Musik</button>
 
-<audio id="musik" autoplay loop>
-<source src="music/hbd.mp3">
+<audio id="musik" loop>
+    <source src="images/lagu.mp3" type="audio/mpeg">
 </audio>
 
+<audio id="musik" autoplay loop>
+<source src="images/lagu.mp3">
+</audio>
 
+<script>
+    const musik = document.getElementById("musik");
+
+function playMusic(){
+    musik.play();
+}
+</script>
 
 </body>
 </html>
